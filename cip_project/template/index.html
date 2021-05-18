@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <b><title> SIGN LANGUAGE RECOGNITION</title></b>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+
+    <div class="head"> <b><h1>SIGN LANGUAGE RECOGNITION </h1></b></div>
+    <br>
+    <div class="main">
+        <form method="post" enctype="multipart/form-data" action="predictges">
+            {% csrf_token %}
+            <div class="look">
+
+                <h2 class="label">UPLOAD THE HAND GESTURE HERE--></h2>
+
+                <input type="file" name="filePath" class="choose">
+                <br>
+
+                <center><input type="submit" value="PREDICT" class="submit"></center>
+                <br>
+                <center><img src={{filePathName}} alt="imagename"></center>
+                
+            </div>
+        </form>
+        {% if PredictedLabel %}
+        <div class="ans"><h2>THE PREDICTED CHARACTER IS :: {{PredictedLabel}}</h2></div>
+        {% endif %}
+    </div>
+    <br>
+</body>
+</html>

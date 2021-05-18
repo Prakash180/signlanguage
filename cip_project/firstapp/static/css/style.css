@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('signlang.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    min-width: auto;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+.head {
+    color:white;
+    background-color:gray;
+    width: 800px;
+    font-weight: 300;
+    font-family: 'Lucida Grande','Trebuchet MS', 'Arial', 'sans-serif';
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+}
+.main {
+    background-color: rgb(9 4 14 / 0.74);
+    width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 15px 15px 15px 15px;
+    height: 100%;
+    padding: 10px 0px 10px 0px;
+}
+.look {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+.label {
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 375px;
+    color:black;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Tempus Sans ITC'; 
+    background-color: aliceblue;  
+    border-radius: 15px 15px 15px 15px;
+}
+.choose{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 400px;
+    color: snow;
+    font-size: 17px;
+    font-weight: 550;
+    font-family: 'Tempus Sans ITC';
+    
+}
+.submit {
+    background-color:aliceblue;
+    padding: 5px 32px;
+    text-decoration: solid;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Tempus Sans ITC';
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 15px 15px 15px 15px;
+}
+.ans {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Tempus Sans ITC';
+}
